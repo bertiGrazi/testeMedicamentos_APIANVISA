@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57904C275A84250B59010A7F /* Pods_TesteAPI_DrugData_TesteAPI_DrugDataUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C11E82493711DBFE1C0F21 /* Pods_TesteAPI_DrugData_TesteAPI_DrugDataUITests.framework */; };
+		C573D70F468DF97E3E09306D /* Pods_TesteAPI_DrugData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E25CAC623CCB2633973A55 /* Pods_TesteAPI_DrugData.framework */; };
+		E3B057F8DFE0E20216A2DC62 /* Pods_TesteAPI_DrugDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7E4C9FD89252270CD640CE /* Pods_TesteAPI_DrugDataTests.framework */; };
+		F202CD0B25A4C6B800B16F96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202CD0A25A4C6B800B16F96 /* AppDelegate.swift */; };
+		F202CD0D25A4C6B800B16F96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202CD0C25A4C6B800B16F96 /* SceneDelegate.swift */; };
+		F202CD0F25A4C6B800B16F96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202CD0E25A4C6B800B16F96 /* ViewController.swift */; };
+		F202CD1225A4C6B800B16F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F202CD1025A4C6B800B16F96 /* Main.storyboard */; };
+		F202CD1425A4C6BB00B16F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F202CD1325A4C6BB00B16F96 /* Assets.xcassets */; };
+		F202CD1725A4C6BB00B16F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F202CD1525A4C6BB00B16F96 /* LaunchScreen.storyboard */; };
+		F202CD2225A4C6BC00B16F96 /* TesteAPI_DrugDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202CD2125A4C6BC00B16F96 /* TesteAPI_DrugDataTests.swift */; };
+		F202CD2D25A4C6BC00B16F96 /* TesteAPI_DrugDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202CD2C25A4C6BC00B16F96 /* TesteAPI_DrugDataUITests.swift */; };
+		F23E103425A4C9EF0078D575 /* Remedio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E103325A4C9EF0078D575 /* Remedio.swift */; };
+		F23E103925A4CBF00078D575 /* RemedioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E103825A4CBF00078D575 /* RemedioTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F202CD1E25A4C6BC00B16F96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F202CCFF25A4C6B700B16F96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F202CD0625A4C6B800B16F96;
+			remoteInfo = TesteAPI_DrugData;
+		};
+		F202CD2925A4C6BC00B16F96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F202CCFF25A4C6B700B16F96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F202CD0625A4C6B800B16F96;
+			remoteInfo = TesteAPI_DrugData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C7E4C9FD89252270CD640CE /* Pods_TesteAPI_DrugDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteAPI_DrugDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		279187FFD183538F1A116965 /* Pods-TesteAPI_DrugDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteAPI_DrugDataTests.release.xcconfig"; path = "Target Support Files/Pods-TesteAPI_DrugDataTests/Pods-TesteAPI_DrugDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		39E25CAC623CCB2633973A55 /* Pods_TesteAPI_DrugData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteAPI_DrugData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B3B5609FC1FB75265B0F3E /* Pods-TesteAPI_DrugDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteAPI_DrugDataTests.debug.xcconfig"; path = "Target Support Files/Pods-TesteAPI_DrugDataTests/Pods-TesteAPI_DrugDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		45C11E82493711DBFE1C0F21 /* Pods_TesteAPI_DrugData_TesteAPI_DrugDataUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteAPI_DrugData_TesteAPI_DrugDataUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		747B6515852AC995778BA430 /* Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.debug.xcconfig"; path = "Target Support Files/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CA9FA6A211DCE31F8824289 /* Pods-TesteAPI_DrugData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteAPI_DrugData.debug.xcconfig"; path = "Target Support Files/Pods-TesteAPI_DrugData/Pods-TesteAPI_DrugData.debug.xcconfig"; sourceTree = "<group>"; };
+		B58F05D3DF3127876DE52358 /* Pods-TesteAPI_DrugData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteAPI_DrugData.release.xcconfig"; path = "Target Support Files/Pods-TesteAPI_DrugData/Pods-TesteAPI_DrugData.release.xcconfig"; sourceTree = "<group>"; };
+		BA86535B75E2A688040C0ED6 /* Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.release.xcconfig"; path = "Target Support Files/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F202CD0725A4C6B800B16F96 /* TesteAPI_DrugData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteAPI_DrugData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F202CD0A25A4C6B800B16F96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F202CD0C25A4C6B800B16F96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F202CD0E25A4C6B800B16F96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F202CD1125A4C6B800B16F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F202CD1325A4C6BB00B16F96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F202CD1625A4C6BB00B16F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F202CD1825A4C6BB00B16F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F202CD1D25A4C6BC00B16F96 /* TesteAPI_DrugDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesteAPI_DrugDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F202CD2125A4C6BC00B16F96 /* TesteAPI_DrugDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteAPI_DrugDataTests.swift; sourceTree = "<group>"; };
+		F202CD2325A4C6BC00B16F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F202CD2825A4C6BC00B16F96 /* TesteAPI_DrugDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesteAPI_DrugDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F202CD2C25A4C6BC00B16F96 /* TesteAPI_DrugDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteAPI_DrugDataUITests.swift; sourceTree = "<group>"; };
+		F202CD2E25A4C6BC00B16F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23E103325A4C9EF0078D575 /* Remedio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remedio.swift; sourceTree = "<group>"; };
+		F23E103825A4CBF00078D575 /* RemedioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemedioTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F202CD0425A4C6B800B16F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C573D70F468DF97E3E09306D /* Pods_TesteAPI_DrugData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F202CD1A25A4C6BC00B16F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B057F8DFE0E20216A2DC62 /* Pods_TesteAPI_DrugDataTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F202CD2525A4C6BC00B16F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57904C275A84250B59010A7F /* Pods_TesteAPI_DrugData_TesteAPI_DrugDataUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEFCB8E7F51658DB08245784 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CA9FA6A211DCE31F8824289 /* Pods-TesteAPI_DrugData.debug.xcconfig */,
+				B58F05D3DF3127876DE52358 /* Pods-TesteAPI_DrugData.release.xcconfig */,
+				747B6515852AC995778BA430 /* Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.debug.xcconfig */,
+				BA86535B75E2A688040C0ED6 /* Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.release.xcconfig */,
+				41B3B5609FC1FB75265B0F3E /* Pods-TesteAPI_DrugDataTests.debug.xcconfig */,
+				279187FFD183538F1A116965 /* Pods-TesteAPI_DrugDataTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8781C3A3B872D6688B351A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39E25CAC623CCB2633973A55 /* Pods_TesteAPI_DrugData.framework */,
+				45C11E82493711DBFE1C0F21 /* Pods_TesteAPI_DrugData_TesteAPI_DrugDataUITests.framework */,
+				0C7E4C9FD89252270CD640CE /* Pods_TesteAPI_DrugDataTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F202CCFE25A4C6B700B16F96 = {
+			isa = PBXGroup;
+			children = (
+				F202CD0925A4C6B800B16F96 /* TesteAPI_DrugData */,
+				F202CD2025A4C6BC00B16F96 /* TesteAPI_DrugDataTests */,
+				F202CD2B25A4C6BC00B16F96 /* TesteAPI_DrugDataUITests */,
+				F202CD0825A4C6B800B16F96 /* Products */,
+				AEFCB8E7F51658DB08245784 /* Pods */,
+				B8781C3A3B872D6688B351A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F202CD0825A4C6B800B16F96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F202CD0725A4C6B800B16F96 /* TesteAPI_DrugData.app */,
+				F202CD1D25A4C6BC00B16F96 /* TesteAPI_DrugDataTests.xctest */,
+				F202CD2825A4C6BC00B16F96 /* TesteAPI_DrugDataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F202CD0925A4C6B800B16F96 /* TesteAPI_DrugData */ = {
+			isa = PBXGroup;
+			children = (
+				F202CD0A25A4C6B800B16F96 /* AppDelegate.swift */,
+				F202CD0C25A4C6B800B16F96 /* SceneDelegate.swift */,
+				F202CD0E25A4C6B800B16F96 /* ViewController.swift */,
+				F202CD1025A4C6B800B16F96 /* Main.storyboard */,
+				F202CD1325A4C6BB00B16F96 /* Assets.xcassets */,
+				F202CD1525A4C6BB00B16F96 /* LaunchScreen.storyboard */,
+				F202CD1825A4C6BB00B16F96 /* Info.plist */,
+				F23E103325A4C9EF0078D575 /* Remedio.swift */,
+				F23E103825A4CBF00078D575 /* RemedioTableViewCell.swift */,
+			);
+			path = TesteAPI_DrugData;
+			sourceTree = "<group>";
+		};
+		F202CD2025A4C6BC00B16F96 /* TesteAPI_DrugDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				F202CD2125A4C6BC00B16F96 /* TesteAPI_DrugDataTests.swift */,
+				F202CD2325A4C6BC00B16F96 /* Info.plist */,
+			);
+			path = TesteAPI_DrugDataTests;
+			sourceTree = "<group>";
+		};
+		F202CD2B25A4C6BC00B16F96 /* TesteAPI_DrugDataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F202CD2C25A4C6BC00B16F96 /* TesteAPI_DrugDataUITests.swift */,
+				F202CD2E25A4C6BC00B16F96 /* Info.plist */,
+			);
+			path = TesteAPI_DrugDataUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F202CD0625A4C6B800B16F96 /* TesteAPI_DrugData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F202CD3125A4C6BC00B16F96 /* Build configuration list for PBXNativeTarget "TesteAPI_DrugData" */;
+			buildPhases = (
+				7DA4261F5AE77E79DC38D665 /* [CP] Check Pods Manifest.lock */,
+				F202CD0325A4C6B800B16F96 /* Sources */,
+				F202CD0425A4C6B800B16F96 /* Frameworks */,
+				F202CD0525A4C6B800B16F96 /* Resources */,
+				0BFAF3888A4F328DB830603C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TesteAPI_DrugData;
+			productName = TesteAPI_DrugData;
+			productReference = F202CD0725A4C6B800B16F96 /* TesteAPI_DrugData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F202CD1C25A4C6BC00B16F96 /* TesteAPI_DrugDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F202CD3425A4C6BC00B16F96 /* Build configuration list for PBXNativeTarget "TesteAPI_DrugDataTests" */;
+			buildPhases = (
+				BAE509137A0F3ED1C7A20545 /* [CP] Check Pods Manifest.lock */,
+				F202CD1925A4C6BC00B16F96 /* Sources */,
+				F202CD1A25A4C6BC00B16F96 /* Frameworks */,
+				F202CD1B25A4C6BC00B16F96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F202CD1F25A4C6BC00B16F96 /* PBXTargetDependency */,
+			);
+			name = TesteAPI_DrugDataTests;
+			productName = TesteAPI_DrugDataTests;
+			productReference = F202CD1D25A4C6BC00B16F96 /* TesteAPI_DrugDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F202CD2725A4C6BC00B16F96 /* TesteAPI_DrugDataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F202CD3725A4C6BC00B16F96 /* Build configuration list for PBXNativeTarget "TesteAPI_DrugDataUITests" */;
+			buildPhases = (
+				21F36B19113E905A05F3AC84 /* [CP] Check Pods Manifest.lock */,
+				F202CD2425A4C6BC00B16F96 /* Sources */,
+				F202CD2525A4C6BC00B16F96 /* Frameworks */,
+				F202CD2625A4C6BC00B16F96 /* Resources */,
+				DC41ED97313CA06156CD218F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F202CD2A25A4C6BC00B16F96 /* PBXTargetDependency */,
+			);
+			name = TesteAPI_DrugDataUITests;
+			productName = TesteAPI_DrugDataUITests;
+			productReference = F202CD2825A4C6BC00B16F96 /* TesteAPI_DrugDataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F202CCFF25A4C6B700B16F96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					F202CD0625A4C6B800B16F96 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					F202CD1C25A4C6BC00B16F96 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = F202CD0625A4C6B800B16F96;
+					};
+					F202CD2725A4C6BC00B16F96 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = F202CD0625A4C6B800B16F96;
+					};
+				};
+			};
+			buildConfigurationList = F202CD0225A4C6B700B16F96 /* Build configuration list for PBXProject "TesteAPI_DrugData" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F202CCFE25A4C6B700B16F96;
+			productRefGroup = F202CD0825A4C6B800B16F96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F202CD0625A4C6B800B16F96 /* TesteAPI_DrugData */,
+				F202CD1C25A4C6BC00B16F96 /* TesteAPI_DrugDataTests */,
+				F202CD2725A4C6BC00B16F96 /* TesteAPI_DrugDataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F202CD0525A4C6B800B16F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F202CD1725A4C6BB00B16F96 /* LaunchScreen.storyboard in Resources */,
+				F202CD1425A4C6BB00B16F96 /* Assets.xcassets in Resources */,
+				F202CD1225A4C6B800B16F96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F202CD1B25A4C6BC00B16F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F202CD2625A4C6BC00B16F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BFAF3888A4F328DB830603C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TesteAPI_DrugData/Pods-TesteAPI_DrugData-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TesteAPI_DrugData/Pods-TesteAPI_DrugData-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TesteAPI_DrugData/Pods-TesteAPI_DrugData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21F36B19113E905A05F3AC84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA4261F5AE77E79DC38D665 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TesteAPI_DrugData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE509137A0F3ED1C7A20545 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TesteAPI_DrugDataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC41ED97313CA06156CD218F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests/Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F202CD0325A4C6B800B16F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F202CD0F25A4C6B800B16F96 /* ViewController.swift in Sources */,
+				F23E103425A4C9EF0078D575 /* Remedio.swift in Sources */,
+				F202CD0B25A4C6B800B16F96 /* AppDelegate.swift in Sources */,
+				F23E103925A4CBF00078D575 /* RemedioTableViewCell.swift in Sources */,
+				F202CD0D25A4C6B800B16F96 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F202CD1925A4C6BC00B16F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F202CD2225A4C6BC00B16F96 /* TesteAPI_DrugDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F202CD2425A4C6BC00B16F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F202CD2D25A4C6BC00B16F96 /* TesteAPI_DrugDataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F202CD1F25A4C6BC00B16F96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F202CD0625A4C6B800B16F96 /* TesteAPI_DrugData */;
+			targetProxy = F202CD1E25A4C6BC00B16F96 /* PBXContainerItemProxy */;
+		};
+		F202CD2A25A4C6BC00B16F96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F202CD0625A4C6B800B16F96 /* TesteAPI_DrugData */;
+			targetProxy = F202CD2925A4C6BC00B16F96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F202CD1025A4C6B800B16F96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F202CD1125A4C6B800B16F96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F202CD1525A4C6BB00B16F96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F202CD1625A4C6BB00B16F96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F202CD2F25A4C6BC00B16F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F202CD3025A4C6BC00B16F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F202CD3225A4C6BC00B16F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA9FA6A211DCE31F8824289 /* Pods-TesteAPI_DrugData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesteAPI_DrugData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-bertiGrazi.TesteAPI-DrugData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F202CD3325A4C6BC00B16F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B58F05D3DF3127876DE52358 /* Pods-TesteAPI_DrugData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesteAPI_DrugData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-bertiGrazi.TesteAPI-DrugData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F202CD3525A4C6BC00B16F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B3B5609FC1FB75265B0F3E /* Pods-TesteAPI_DrugDataTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesteAPI_DrugDataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-bertiGrazi.TesteAPI-DrugDataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TesteAPI_DrugData.app/TesteAPI_DrugData";
+			};
+			name = Debug;
+		};
+		F202CD3625A4C6BC00B16F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279187FFD183538F1A116965 /* Pods-TesteAPI_DrugDataTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesteAPI_DrugDataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-bertiGrazi.TesteAPI-DrugDataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TesteAPI_DrugData.app/TesteAPI_DrugData";
+			};
+			name = Release;
+		};
+		F202CD3825A4C6BC00B16F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 747B6515852AC995778BA430 /* Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesteAPI_DrugDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-bertiGrazi.TesteAPI-DrugDataUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TesteAPI_DrugData;
+			};
+			name = Debug;
+		};
+		F202CD3925A4C6BC00B16F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA86535B75E2A688040C0ED6 /* Pods-TesteAPI_DrugData-TesteAPI_DrugDataUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesteAPI_DrugDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-bertiGrazi.TesteAPI-DrugDataUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TesteAPI_DrugData;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F202CD0225A4C6B700B16F96 /* Build configuration list for PBXProject "TesteAPI_DrugData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F202CD2F25A4C6BC00B16F96 /* Debug */,
+				F202CD3025A4C6BC00B16F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F202CD3125A4C6BC00B16F96 /* Build configuration list for PBXNativeTarget "TesteAPI_DrugData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F202CD3225A4C6BC00B16F96 /* Debug */,
+				F202CD3325A4C6BC00B16F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F202CD3425A4C6BC00B16F96 /* Build configuration list for PBXNativeTarget "TesteAPI_DrugDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F202CD3525A4C6BC00B16F96 /* Debug */,
+				F202CD3625A4C6BC00B16F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F202CD3725A4C6BC00B16F96 /* Build configuration list for PBXNativeTarget "TesteAPI_DrugDataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F202CD3825A4C6BC00B16F96 /* Debug */,
+				F202CD3925A4C6BC00B16F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F202CCFF25A4C6B700B16F96 /* Project object */;
+}

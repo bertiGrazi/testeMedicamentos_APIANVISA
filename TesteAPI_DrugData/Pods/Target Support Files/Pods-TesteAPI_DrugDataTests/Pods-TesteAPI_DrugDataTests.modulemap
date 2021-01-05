@@ -1,0 +1,6 @@
+framework module Pods_TesteAPI_DrugDataTests {
+  umbrella header "Pods-TesteAPI_DrugDataTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
